@@ -5,11 +5,10 @@
         "version": "0.0.1",
         "description": "Sentinelone XDR Add-on for Splunk",
         "contact": {
-            "name": "Anthony Giallombardo",
-            "email": "anthony@nullqu.com"
+            "name": ""
         },
         "license": {
-            "name": "LICENSE.md"
+            "name": "LICENSE.txt"
         }
     },
     "servers": [
@@ -34,6 +33,12 @@
                     "name": {
                         "type": "string"
                     },
+                    "subdomain": {
+                        "type": "string"
+                    },
+                    "scope_id": {
+                        "type": "string"
+                    },
                     "api_key": {
                         "type": "string",
                         "format": "password"
@@ -43,6 +48,12 @@
             "account_without_name": {
                 "type": "object",
                 "properties": {
+                    "subdomain": {
+                        "type": "string"
+                    },
+                    "scope_id": {
+                        "type": "string"
+                    },
                     "api_key": {
                         "type": "string",
                         "format": "password"

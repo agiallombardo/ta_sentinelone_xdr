@@ -35,6 +35,20 @@ special_fields = [
 
 fields = [
     field.RestField(
+        'subdomain',
+        required=True,
+        encrypted=False,
+        default=None,
+        validator=None
+    ), 
+    field.RestField(
+        'scope_id',
+        required=True,
+        encrypted=False,
+        default=None,
+        validator=None
+    ), 
+    field.RestField(
         'api_key',
         required=True,
         encrypted=True,
